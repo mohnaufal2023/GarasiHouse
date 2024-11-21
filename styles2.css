@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+.hero {
+    background-image: url(./images/back\ gh.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    position: relative;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+.hero h1, .hero h2 {
+    color: #fbb001;
+    margin-bottom: 0.5rem;
+}
+.hero h1 {
+    font-size: 3rem;
+}
+.hero h2 {
+    font-size: 2rem;
+}
+
+.menu-button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:white;
+    background-color: #1a1a1a;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #fbb001;
+}
+
+.contact-info {
+    color: white;
+    margin-top: 1rem;
+}
+.contact-info p {
+    margin-bottom: 0.5rem;
+}
+.best-seller {
+    background-color: #1a1a1a;
+    padding: 2rem;
+}
+.best-seller h2 {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.product-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.product-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.product-info {
+    padding: 1rem;
+    text-align: center;
+}
+.product-name {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.product-price {
+    font-size: 1.25rem;
+    color: #E6B17E;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+}
